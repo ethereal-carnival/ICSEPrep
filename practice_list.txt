@@ -1,0 +1,17 @@
+1. Check if an input number is perfect. In number theory, a perfect number is a positive integer that is equal to the sum of its positive divisors, excluding the number itself. For instance, 6 has divisors 1, 2 and 3 (excluding itself), and 1 + 2 + 3 = 6, so 6 is a perfect number.
+
+2. Check if an input number is a palindrome. A palindrome is a word, phrase, or sequence that reads the same backwards as forwards, e.g. madam or 11011.
+
+3. Display all prime factors of a number. Eg: 150 = 2*3*5*5, so prime factors are 2, 3, 5 and 5. Total 4.
+
+4. Write a menu-based program that asks user to choose from these options, and executes the chosen option:
+ a. Check if an input character is upper case of lower case
+ b. Check if an input character is a digit, a letter or a white space
+ c. Convert an input character into uppercase
+Program should ask user if they want to continue and exit only when users inputs "n" in response to the question.
+
+5. Ask user to enter a list of 10 numbers and sort them in descending order
+
+6. Ask user to enter a list of 5 numbers and show the sum
+
+7. TBC - Constructors/Functions based
