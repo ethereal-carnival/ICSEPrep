@@ -10,9 +10,9 @@
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
+      <a<rtifactId>junit</artifactId>
       <version>4.12</version>
-      <scope>test</scope>
+      <scope>test/scope>
     </dependency>
   </dependencies>
 

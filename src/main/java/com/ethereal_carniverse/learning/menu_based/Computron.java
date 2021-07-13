@@ -88,5 +88,9 @@ public class Computron {
             executeAgain = Character.toLowerCase(input.charAt(0));
 
         } while (executeAgain == 'y');
+
+        System.out.println("Sayonaraaaaaaaaaaaaaaaaaa");
+
+        scanner.close();
     }
 }
