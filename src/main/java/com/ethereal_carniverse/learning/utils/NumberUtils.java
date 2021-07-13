@@ -11,7 +11,7 @@ public class NumberUtils {
         return sum == num;
     }
 
-    private static boolean isFactor(int numberToCheck, int num) {
+    public static boolean isFactor(int numberToCheck, int num) {
         return num % numberToCheck == 0;
     }
 }
