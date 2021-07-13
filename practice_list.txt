@@ -1,3 +1,5 @@
+----- BASIC -----
+
 1. Check if an input number is perfect. In number theory, a perfect number is a positive integer that is equal to the sum of its positive divisors, excluding the number itself. For instance, 6 has divisors 1, 2 and 3 (excluding itself), and 1 + 2 + 3 = 6, so 6 is a perfect number.
 
 2. Check if an input number is a palindrome. A palindrome is a word, phrase, or sequence that reads the same backwards as forwards, e.g. madam or 11011.
@@ -14,4 +16,62 @@ Program should ask user if they want to continue and exit only when users inputs
 
 6. Ask user to enter a list of 5 numbers and show the sum
 
-7. TBC - Constructors/Functions based
+7. Hogwarts converts percentages to grades as follows:
+ a. Below 60%: F grade
+ b. 60% - below 75%: C grade
+ c. 75% - below 90%: B grade
+ d. 90% - below 100%: A grade
+ e. 100%: O grade
+Write a program that asks the wizard to input the percentage marks and output should be the grade secured.
+
+8. Write a program (main() not required) to work as a library fee calculator:
+ Class: FeeCalculator
+ Data members:
+  - double baseFee: base fee for renting out the book (each book can have a different baseFee)
+  - double CONVENIENCE_CHARGE = Rs. 4.50: constant convenience charge that will always be levied on every book
+ Constructors:
+  - Default constructor: initialise baseFee should be Rs. 8
+  - Parameterised constructor: initialise baseFee for books who's base fee is to be provided by main() when creating the object
+ Methods:
+  - double feeCalculator(): to calculate fee when book is returned on time:
+    +) Fee = base fee + convenience charge
+    This function should return the Fee
+  - double feeCalculator(int numberOfDaysLate): to calculate fee when book is returned late:
+    +) If numberOfDaysLate <= 5, lateFee = 2.5 * numberOfDaysLate
+    +) If numberOfDaysLate > 5, but <= 10, lateFee for the first 5 days is (2.5 * 5 = 12.4), lateFee for the remaining days = 4 * number_of_remaining_days
+    +) If numberOfDaysLate > 10 lateFee for the first 10 days is (2.5 * 5 + 4 * 5 = 32.4), lateFee for the remaining days = 7.5 * number_of_remaining_days
+    totalFee = base fee + convenience charge + lateFee
+    This function should return the totalFee
+  - void display(): should display the convenience charge and the baseFee
+
+----- ONE STEP UP -----
+
+9. Ask the user to enter a value for "n". Then, print all prime numbers between 1 and n.
+
+10. Ask the user to enter a value for "n". Then, print the first n prime numbers.
+
+11. Ask the user to enter 2 numbers. Display if they are co-primes or not. 2 numbers are said to be co-prime if they have only one common factor - which is the number "1" - ie 1 is the only common factor (in other words, their HCF is 1)
+
+12. Ask the user to enter 3 numbers. Display the greatest among them.
+
+13. Ask the user to enter 3 number. Display their LCM.
+
+14. Ask the user to enter the size of a list, then ask the user to input all the numbers in the list. Then in the end, print only the numbers that are prime.
+
+15. Ask the user to enter a value for "n". Display the first "n" numbers in the fibonacci series.
+
+16. Check if an input number is a factorion. A factorion is a number that is equal to the sum of it's digits factorials. For eg: 145 = 1! + 2! + 5!
+
+17. Exchange the value contained in 2 variables without using a third variable.
+
+
+----- ADVANCED -----
+
+18. Ask the user for a number, and read it's digits from left-to-right. Eg:
+Input: 35612
+Output:
+3
+5
+6
+1
+2
