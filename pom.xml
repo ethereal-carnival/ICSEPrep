@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.ethereal_carniverse.learning</groupId>
+  <artifactId>icse-prep</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <properties>
+
+    <!-- Compiler properties -->
+    <maven.compiler.target>1.11</maven.compiler.target>
+    <maven.compiler.source>1.11</maven.compiler.source>
+    <encoding>UTF-8</encoding>
+    <project.build.sourceEncoding>${encoding}</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>${encoding}</project.reporting.outputEncoding>
+    <project.resources.sourceEncoding>${encoding}</project.resources.sourceEncoding>
+    <archetype.encoding>${encoding}</archetype.encoding>
+
+  </properties>
+
+<!--  <distributionManagement>-->
+<!--    <snapshotRepository>-->
+<!--      <id>snapshots</id>-->
+<!--      <url>http://nexus:8081/repository/maven-snapshots/</url>-->
+<!--    </snapshotRepository>-->
+<!--    <repository>-->
+<!--      <id>releases</id>-->
+<!--      <url>http://nexus:8081/repository/maven-releases/</url>-->
+<!--    </repository>-->
+<!--  </distributionManagement>-->
+
+  <build>
+
+    <finalName>${project.artifactId}</finalName>
+
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>com.ethereal_carniverse.learning.Main</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
